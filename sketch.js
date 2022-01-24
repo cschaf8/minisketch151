@@ -6,6 +6,8 @@ function setup() {
   }
 
   r = 153;
+  g = 187;
+  countUp = true;
 
   function draw() {
     a = windowWidth;
@@ -27,27 +29,28 @@ function setup() {
     rect(0,b/2,a/2,b/2);
 
     //r = 153;
-    // g = 187;
-    // countUp = true;
-    // if(countUp)
-    // {
-    //   ++r;
-    //   if(r > 215)
-    //   {
-    //     console.log("false");
-    //     countUp = false;
-    //   }
+    // 
+    
+    if(countUp == true)
+    {
+      ++r;
+      if(r >= 215)
+      {
+        console.log("false");
+        countUp = false;
+      }
 
-    // }
-    // if(countUp == false)
-    // {
-    //   --r;
-    //   console.log("minus");
-    //   if(r < 152)
-    //   {
-    //     countUp = true;
-    //   }
-    // }
+    }
+    if(countUp == false)
+    {
+      --r;
+      console.log("minus");
+      if(r <= 154)
+      {
+        countUp = true;
+        console.log(countUp);
+      }
+    }
     
 
     console.log(r);
@@ -64,7 +67,7 @@ function setup() {
     rect((13*a)/16,0,a/16,b/2);
     rect((15*a)/16,0,a/16,b/2);
 
-    fill(216, 153, 255);
+    //fill(216, 153, 255);
     rect(a/2,(9*b)/16,a/2,b/16);
     rect(a/2,(11*b)/16,a/2,b/16);
     rect(a/2,(13*b)/16,a/2,b/16);
