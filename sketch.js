@@ -26,17 +26,14 @@ function setup() {
     rect(a/2,0,a/2,b/2);
 
     fill(140);
-    rect(0,b/2,a/2,b/2);
-
-    //r = 153;
-    // 
+    rect(0,b/2,a/2,b/2); 
     
     if(countUp == true)
     {
       ++r;
-      if(r >= 215)
+      if(r >= 205)
       {
-        console.log("false");
+        //console.log("false");
         countUp = false;
       }
 
@@ -44,11 +41,11 @@ function setup() {
     if(countUp == false)
     {
       --r;
-      console.log("minus");
-      if(r <= 154)
+      //console.log("minus");
+      if(r <= 164)
       {
         countUp = true;
-        console.log(countUp);
+        //console.log(countUp);
       }
     }
     
@@ -80,32 +77,28 @@ function setup() {
 
     //strokeWeight(1);
     //strokeCap(SQUARE);
-    fill(216, 153, 255);
+    //fill(205,187,255);
+    fill(100);
     rect((6*a)/16,(6*b)/16,a/8,b/4);
+    fill(220);
     rect((8*a)/16,(8*b)/16,a/8,b/8);
-    fill(153, 187, 255);
+    fill(180);
     rect((6*a)/16,(8*b)/16,a/8,b/8);
+    fill(140);
     rect((8*a)/16,(6*b)/16,a/8,b/8);
 
-    fill(220);
-    stroke(220);
-    strokeWeight(1);
-    triangle((6*a)/16,(6*b)/16,(6*a)/16, (8*b)/16, (8*a)/16, (6*b)/16);
+    // fill(164,187,255);
+    // triangle((6*a)/16,(6*b)/16,(6*a)/16, (8*b)/16, (8*a)/16, (6*b)/16);
 
-    fill(180);
-    stroke(180);
-    strokeWeight(1);
-    triangle((8*a)/16,(6*b)/16,(10*a)/16, (6*b)/16, (10*a)/16, (8*b)/16);
+    // fill(205,187,255);
+    // triangle((8*a)/16,(6*b)/16,(10*a)/16, (6*b)/16, (10*a)/16, (8*b)/16);
 
-    fill(140);
-    stroke(140);
-    strokeWeight(1);
-    triangle((6*a)/16,(10*b)/16,(6*a)/16, (8*b)/16, (8*a)/16, (10*b)/16);
+    // fill(205,187,255);
+    // triangle((6*a)/16,(10*b)/16,(6*a)/16, (8*b)/16, (8*a)/16, (10*b)/16);
 
-    fill(100);
-    stroke(100);
-    strokeWeight(1);
-    triangle((10*a)/16,(10*b)/16,(8*a)/16, (10*b)/16, (10*a)/16, (8*b)/16);
+    // //fill(100);
+    // fill(164,187,255);
+    // triangle((10*a)/16,(10*b)/16,(8*a)/16, (10*b)/16, (10*a)/16, (8*b)/16);
 
     
 
