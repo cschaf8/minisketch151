@@ -1,0 +1,2 @@
+I wanted to make 4 different, evenly divided rectangles on the page with alternating horizontal and vertical lines that alternate between colors. 
+I added a square in the middle with corresponding greyscale shades as well.
